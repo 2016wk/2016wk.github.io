@@ -1,0 +1,52 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+header,footer{
+	border: 2px solid royalblue;
+	height: 150px;
+	margin: 2px 0;
+}
+#center{
+	width: 1200px;
+	margin: auto;
+}
+aside{
+	width: 21%;
+	min-height: 500px;
+	border: 2px solid royalblue;
+	float: left;	
+}
+main{
+	border: 2px solid royalblue;
+	width: 55%;
+	float: left;
+	margin:0 1%;
+	min-height: 500px;
+}
+h1{
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+a:link{
+       color:brown;
+       text-decoration: none;
+}
+a:visited{
+	color:dodgerblue;
+	text-decoration: none;
+}
+a:hover{
+	color:yellow;
+	text-decoration: none;
+}
+a:active{
+	color:wheat;
+	text-decoration: none;
