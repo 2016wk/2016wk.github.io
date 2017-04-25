@@ -1,0 +1,36 @@
+body{
+   background:lemonchiffon ;
+	padding: 0;
+	margin: 0;
+}
+.q{
+	box-shadow: 1px,1px,3px,rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+.q ul{
+	
+	list-style: none;
+	background: cornflowerblue;
+	margin: auto;
+	height: 30px;
+}
+.q li{
+	padding: 5px ;
+	float: left;
+	display: inline-block;
+	height: 20px;
+	text-indent:20px;
+	 transition:all .6s;
+	position: relative;
+	position: relative;
+	z-index: 1;
+
+}
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.a li:hover::before{
+	transform: scale(1);
+}
