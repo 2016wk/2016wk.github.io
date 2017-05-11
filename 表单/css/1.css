@@ -1,0 +1,106 @@
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+body{ 
+	width: 1200px;
+	height: 800px;
+    background-size:100% 100%; 
+} 
+.post1{
+	float: left;
+	background: white;
+	opacity: 0.4;
+	border:1px dashed cornflowerblue;
+	width: 30%;
+	height: 60px;
+	margin: auto;
+	
+	margin-top: 200px;
+	box-shadow:  0px 0px 2px 1px peachpuff;
+	position: relative;
+	text-align: center;
+	transition: all 0.35s;
+	overflow: hidden;
+	
+}
+.post2{
+	float: right;
+	background: white;
+	opacity: 0.4;
+	border:1px dashed cornflowerblue;
+	width: 30%;
+	height: 60px;
+	margin: auto;
+	margin-left: 900px ;
+	margin-top: -65px;
+	box-shadow:  0px 0px 2px 1px peachpuff;
+	position: relative;
+	text-align: center;
+	transition: all 0.35s;
+	overflow: hidden;
+	letter-spacing: 0px;
+	
+}
+.post1:hover,
+.post2:hover
+{
+	width: 40%;
+	height: 200px;
+	box-shadow:  1px 0px 1px 2px  blueviolet;
+	opacity: 0.5;
+	border:1px solid teal;
+	cursor: pointer;
+}
+
+
+.post1 [type="submit1"]{
+	display: block;
+	float: left;
+	position: absolute;
+	margin-top:15px ;
+	margin-left:30%;
+	background: cornflowerblue;
+	text-align: center;
+	transition: all .5s;
+	height: 10%;
+}
+.post1 [type="submit1"]:hover{
+	cursor: pointer;
+	height: 15%;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 15px;
+
+}
+.post2 [type="submit2"]{
+	display: block;
+	height: 10%;
+	float: left;
+	position: absolute;
+	margin-top:30px ;
+	margin-left:30%;
+	background: cornflowerblue;
+	text-align: center;
+	transition: all .5s;
+}
+.post2 [type="submit2"]:hover{
+	font-size: 15px;
+	height: 15%;
+	cursor: pointer;
+	color: white;
+	letter-spacing: 2px;
+
+	}
+.post1 *,
+.post2 *{
+	overflow: hidden;
+	letter-spacing: 4px;
+	text-indent: 0px;
+	
+}
+.post #pa{
+	box-shadow:  1px 0px 1px 2px  blueviolet;
+  transition: all 0.5s;
+}
