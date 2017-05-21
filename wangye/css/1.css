@@ -4,7 +4,7 @@ clear::after{
 	clear: both;
 }
 body{
-	background: url(../img/1.jpg) fixed no-repeat;
+	background: url(../img/1.gif) fixed no-repeat;
 	background-size:100% ;
 	min-height: 800px;
 	overflow: scroll;
