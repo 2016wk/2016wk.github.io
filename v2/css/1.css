@@ -1,0 +1,36 @@
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+body{
+	background: url(../img/1.jpg) fixed no-repeat;
+	background-size: 100%;
+	min-height: 800px;
+	overflow: scroll;
+	overflow-y: hidden;
+	position: relative;
+	overflow: scroll;
+}
+body #logo{
+	position: absolute;
+	top: 42px;
+	left:110px;
+	width: 130px;
+	height: 130px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+body h2{
+	text-align: center;
+	color: white;
+}
+
+#con1{
+	color: white;
+	position: absolute;
+	left:220px;
+	top: 135px;
+	cursor: pointer;
+
+}
