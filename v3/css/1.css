@@ -1,0 +1,133 @@
+.clearfix::after{
+content: "";
+display: block;
+clear: both;
+}
+body{
+	background: url(../img/1.jpg) fixed no-repeat;
+	background-size: 100%;
+	min-height: 800px;
+	overflow: scroll;
+	overflow-y: hidden;
+	position: relative;
+	overflow: scroll;
+}
+body #logo{
+	position: absolute;
+	top: 42px;
+	left:110px;
+	width: 130px;
+	height: 130px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+body h2{
+	text-align: center;
+	color: white;
+}
+
+#con1{
+	color: white;
+	position: absolute;
+	left:220px;
+	top: 135px;
+	cursor: pointer;
+
+}
+.cd ul{
+	position: absolute;
+	right: 15%;
+     top: 114px;
+}
+.cd ul li{
+	width: 70px;
+	height: 35px;
+	list-style: none;
+	float: left;
+	color: white;	
+	background: mediumslateblue;
+	margin: 15px;
+	padding: 25px 0 0 5px;
+	border-radius:10px ;
+	text-align: center;
+	transition: all .5s;
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 1px 1px 0 0 white;
+}
+.cd ul li:hover{
+	background: lightgreen;
+	color: black;
+	opacity: .6;
+	border: solid 1px white;
+}
+.xq h3{
+	color: white;
+}
+.xq{
+	position: absolute;
+	top: 40%;
+	left: 20%;
+}
+.xq ul li{
+	cursor: pointer;
+	width: 90px;
+	height: 40px;
+	color: white;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+	margin: 20px;
+	background: cornflowerblue;
+	transition: all .4s; 
+	box-shadow: 1px 1px 0 0  black;
+}
+.xq ul li:hover{
+	box-shadow: 1px 1px 0 0 white;
+	border-radius:15px ;
+	transform: scale(1.2) rotate(15deg);
+}
+.tp{
+	position: absolute;
+	top: 75%;
+	right: 8%;
+}
+.tp h3{
+	
+	color: white;
+}
+.tp figure{
+	float: left;
+	
+}
+.tp figure img{
+	width: 150px;
+	height: 150px;
+	float: left;
+	border: double cornflowerblue 3px;
+	-webkit-filter: grayscale(1); 
+	transition: all .5s;
+}
+.tp figure img:hover{
+		-webkit-filter: grayscale(0); 
+		border-style:outset ;
+		transform: scale(1.2);
+} 
+
+.zh{
+	position: absolute;
+	top: 140%;
+	left: 10%;
+}
+.zh #p{
+	height: 20px;
+	background: gainsboro;
+	color: black;
+	display: inline-block;
+}
+.zh #q{
+	height: 20px;
+	background: black;
+	color: white;
+	display: inline-block;
+}
