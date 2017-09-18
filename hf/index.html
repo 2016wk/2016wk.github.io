@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link id="A" rel="stylesheet" type="text/css" href="css/1.css"/>
+	</head>
+	<body>
+		<a href="javascript:"id="B">皮肤一</a>
+		<a href="javascript:"id="C">皮肤二</a>
+		<div>
+			<p>
+				一些文字一些文字一些文字一些文字一些文字一些文字
+				一些文字一些文字一些文字一些文字一些文字一些文字
+				一些文字一些文字一些文字一些文字一些文字一些文字
+				一些文字一些文字一些文字一些文字一些文字一些文字
+			</p>
+		</div>
+		<script type="text/javascript">
+			var A=document.getElementById('A')
+			var B=document.getElementById('B')
+			var C=document.getElementById('C')
+			B.onclick=function(){
+				A.href="css/1.css";
+			}
+			C.onclick=function(){
+				A.href="css/2.css";
+			}
+		</script>
+	</body>
+</html>
