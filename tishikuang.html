@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+					position: relative;
+			}
+		    .newTip{
+		    	width: 200px;
+		    	height: 30px;
+		    	margin-top:50px ;
+		    	/*border: 1px solid #000;*/
+		    	/*position: absolute;
+		    	top: 700px;
+		    	bottom: 0;
+		    	left: 0;
+		    	right: 30px;
+		    	margin: auto;*/
+		    	color: #000;
+		    }
+			#spanTip{
+				border-radius:10px ;
+				display: inline-block;
+				position: relative;
+				top: -55px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				/*width: 100px;*/
+				text-align: center;
+				background-color: #000;
+				color: #fff;
+			}
+			#delta{
+				width: 0;
+				height: 0;
+				border: 10px solid;
+				border-color: #000 transparent transparent transparent; 
+				position: relative;
+				top: -55px;
+				left: 55px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="newTip" data-content="">
+			这里显示提示内容
+		</div>
+		<div class="newTip" data-content="">
+			这里显示提示内容1
+		</div>
+		<div class="newTip" data-content="">
+			这里显示提示内容2
+		</div>
+		<div class="newTip" data-content="">
+			这里显示提示内容3
+		</div>
+		<script type="text/javascript">
+		(function(){
+			var spanObj,deltaObj;
+			var Tip=document.querySelectorAll(".newTip");
+			var spanObj;
+//			console.log(Tip[0].innerHTML);
+			for(var i = 0; i < Tip.length; i++) {
+				Tip[i].addEventListener('mouseenter', (function(n) {
+					return function() {
+						for (var j=0;j<Tip.length;j++) {
+							if(j==n){
+							spanObj=document.createElement("span");
+							spanObj.innerHTML=Tip[j].innerHTML;
+							spanObj.id="spanTip";
+							Tip[j].appendChild(spanObj);
+							
+							deltaObj=document.createElement("div");
+							deltaObj.id="delta";
+							Tip[j].appendChild(deltaObj);
+						}
+						}
+						
+					};
+				})(i));
+			}
+			for(var i = 0; i < Tip.length; i++) {
+				Tip[i].addEventListener('mouseleave', (function(n) {
+					return function() {
+						for (var j=0;j<Tip.length;j++) {
+							if(j==n){
+							spanObj.remove();
+							deltaObj.remove();
+						}
+						}
+						
+					};
+				})(i));
+			}
+//			Tip.addEventListener("mouseenter",enter);
+//			Tip.addEventListener("mouseleave",leave);
+//			function enter(){
+//				
+//			}
+			
+		})();
+			
+		</script>
+	</body>
+</html>
